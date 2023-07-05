@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 186.79 186.79">
+  <defs>
+    <style>
+      .e {
+        isolation: isolate;
+      }
+
+      .f {
+        fill: #acaeb3;
+      }
+
+      .g {
+        fill: url(#b);
+      }
+
+      .h {
+        fill: url(#d);
+        opacity: .4;
+      }
+
+      .h, .i {
+        mix-blend-mode: overlay;
+      }
+
+      .i {
+        fill: url(#c);
+      }
+    </style>
+    <radialGradient id="b" cx="-103.29" cy="34.84" fx="-103.29" fy="34.84" r="177.29" gradientTransform="translate(11.46) rotate(-180) scale(1 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#f9f9f9"/>
+      <stop offset=".16" stop-color="#ede9f2"/>
+      <stop offset="1" stop-color="#9b9da2"/>
+    </radialGradient>
+    <radialGradient id="c" cx="1112.96" cy="-1834.95" fx="1112.96" fy="-1834.95" r="26.61" gradientTransform="translate(-1906.1 -3639.39) rotate(126.03) scale(1.43 2.08) skewX(-4.38)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset=".1" stop-color="#fff" stop-opacity=".85"/>
+      <stop offset=".29" stop-color="#fff" stop-opacity=".59"/>
+      <stop offset=".47" stop-color="#fff" stop-opacity=".38"/>
+      <stop offset=".63" stop-color="#fff" stop-opacity=".22"/>
+      <stop offset=".78" stop-color="#fff" stop-opacity=".1"/>
+      <stop offset=".91" stop-color="#fff" stop-opacity=".03"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="d" data-name="Degradado sin nombre 34" cx="-2925.25" cy="2886.8" fx="-2925.25" fy="2886.8" r="25.68" gradientTransform="translate(-4027.44 -975.06) rotate(-136.79) scale(1.61 .68) skewX(11.83)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset=".1" stop-color="#fff" stop-opacity=".85"/>
+      <stop offset=".29" stop-color="#fff" stop-opacity=".59"/>
+      <stop offset=".47" stop-color="#fff" stop-opacity=".38"/>
+      <stop offset=".63" stop-color="#fff" stop-opacity=".22"/>
+      <stop offset=".78" stop-color="#fff" stop-opacity=".1"/>
+      <stop offset=".91" stop-color="#fff" stop-opacity=".03"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <g class="e">
+    <g id="a" data-name="Capa 1">
+      <g>
+        <path class="g" d="M0,93.4c0,51.58,41.82,93.39,93.4,93.39s93.4-41.81,93.4-93.39S144.97,0,93.4,0,0,41.82,0,93.4Z"/>
+        <g>
+          <path class="f" d="M28.14,109.92c8.78-.79,15.05-10.75,14.01-22.24-1.03-11.49-8.98-20.17-17.76-19.37-8.77,.79-15.04,10.75-14.01,22.23,1.03,11.49,8.98,20.17,17.76,19.38Z"/>
+          <path class="f" d="M20.53,118.27c-5.26,2.76-6.59,10.59-2.97,17.46,3.61,6.88,10.8,10.22,16.06,7.46,5.25-2.76,6.58-10.58,2.97-17.46-3.61-6.88-10.8-10.23-16.06-7.47Z"/>
+          <path class="f" d="M41.36,109.97c-3.11,1.63-3.89,6.25-1.76,10.32,2.13,4.07,6.38,6.04,9.49,4.41,3.1-1.63,3.88-6.25,1.76-10.32-2.13-4.07-6.38-6.04-9.49-4.41Z"/>
+          <path class="f" d="M179.66,96.77c-1.61-11.42-9.99-19.69-18.72-18.46-8.72,1.23-14.48,11.49-12.87,22.91,1.61,11.42,9.99,19.69,18.71,18.45,8.72-1.23,14.49-11.49,12.88-22.91Z"/>
+          <path class="f" d="M168.12,69.59c5.11-3.03,6.04-10.9,2.08-17.59-3.95-6.69-11.3-9.66-16.42-6.64-5.11,3.01-6.04,10.9-2.08,17.58,3.95,6.69,11.3,9.67,16.42,6.65Z"/>
+          <path class="f" d="M148.96,68.54c-2.34-3.95-6.67-5.71-9.7-3.93-3.01,1.78-3.57,6.44-1.23,10.39,2.34,3.96,6.68,5.71,9.7,3.93,3.02-1.78,3.57-6.44,1.23-10.39Z"/>
+        </g>
+        <g>
+          <path class="i" d="M107.63,83.79c-23.78-19.31-33.08-48.68-20.75-65.63,12.34-16.96,41.62-15.06,65.42,4.23,23.78,19.29,33.05,48.69,20.73,65.62-12.35,16.98-41.63,15.07-65.41-4.22Z"/>
+          <path class="h" d="M10.85,114.03c3.15-10.33,19.17-6.05,35.79,9.57,16.62,15.61,27.54,36.64,24.39,46.97-3.14,10.32-19.16,6.05-35.79-9.56-16.61-15.61-27.53-36.66-24.39-46.98Z"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

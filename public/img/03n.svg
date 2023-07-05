@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 186.51 132.36">
+  <defs>
+    <style>
+      .f {
+        isolation: isolate;
+      }
+
+      .g {
+        fill: url(#c);
+        opacity: .6;
+      }
+
+      .g, .h, .i {
+        mix-blend-mode: overlay;
+      }
+
+      .h {
+        fill: url(#e);
+        opacity: .2;
+      }
+
+      .j {
+        fill: url(#b);
+      }
+
+      .i {
+        fill: url(#d);
+        opacity: .4;
+      }
+    </style>
+    <radialGradient id="b" cx="116.77" cy="27.9" fx="116.77" fy="27.9" r="142.26" gradientTransform="translate(233.54 48.27) rotate(-180) scale(1 .73)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#b6ccd2"/>
+      <stop offset=".2" stop-color="#97b6be"/>
+      <stop offset="1" stop-color="#5d87b4"/>
+    </radialGradient>
+    <radialGradient id="c" cx="1125.43" cy="-1859.48" fx="1125.43" fy="-1859.48" r="17.16" gradientTransform="translate(-1953.81 -3702.86) rotate(126.03) scale(1.43 2.08) skewX(-4.38)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset=".1" stop-color="#fff" stop-opacity=".85"/>
+      <stop offset=".29" stop-color="#fff" stop-opacity=".59"/>
+      <stop offset=".47" stop-color="#fff" stop-opacity=".38"/>
+      <stop offset=".63" stop-color="#fff" stop-opacity=".22"/>
+      <stop offset=".78" stop-color="#fff" stop-opacity=".1"/>
+      <stop offset=".91" stop-color="#fff" stop-opacity=".03"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="d" cx="1126.6" cy="-1889.7" fx="1126.6" fy="-1889.7" r="13.49" xlink:href="#c"/>
+    <radialGradient id="e" data-name="Degradado sin nombre 34" cx="22.14" cy="104.33" fx="22.14" fy="104.33" r="9.86" gradientTransform="translate(-129.55 -159.72) rotate(-25.71) scale(1 2.91)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset=".1" stop-color="#fff" stop-opacity=".85"/>
+      <stop offset=".29" stop-color="#fff" stop-opacity=".59"/>
+      <stop offset=".47" stop-color="#fff" stop-opacity=".38"/>
+      <stop offset=".63" stop-color="#fff" stop-opacity=".22"/>
+      <stop offset=".78" stop-color="#fff" stop-opacity=".1"/>
+      <stop offset=".91" stop-color="#fff" stop-opacity=".03"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <g class="f">
+    <g id="a" data-name="Capa 1">
+      <g>
+        <path class="j" d="M147.8,50.92C145.86,22.47,122.19,0,93.25,0S40.64,22.47,38.7,50.92C17.15,51.98,0,69.79,0,91.61s18.24,40.75,40.75,40.75h105.01c22.5,0,40.75-18.24,40.75-40.75s-17.15-39.63-38.7-40.69Z"/>
+        <path class="g" d="M97.08,55.99c-15.34-12.45-21.33-31.39-13.38-42.33,7.95-10.93,26.84-9.71,42.19,2.73,15.33,12.44,21.32,31.4,13.37,42.32-7.96,10.94-26.84,9.71-42.18-2.72Z"/>
+        <path class="i" d="M148.09,92.77c-12.05-9.78-16.76-24.67-10.51-33.26,6.25-8.59,21.09-7.63,33.15,2.14,12.05,9.78,16.75,24.68,10.51,33.26-6.26,8.6-21.1,7.63-33.15-2.14Z"/>
+        <path class="h" d="M29.13,94.13c-8.9-13.88-19.23-20.56-23.1-14.93-3.85,5.62,.22,21.44,9.11,35.32,8.9,13.87,19.24,20.56,23.1,14.93,3.86-5.64-.22-21.44-9.11-35.32Z"/>
+      </g>
+    </g>
+  </g>
+</svg>
