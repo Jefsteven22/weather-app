@@ -3,11 +3,10 @@
   /* Colors Ligth */
   --primary-color: #026EED;
   --secundary-color: #56A5F1;
-  --card-color: #D5F3FF;
   --ligth-color: #FFFFFF;
-  --button-color: #38A0D8;  
+  --button-color: #38a0d8e4;  
   --body-color: radial-gradient(#D5F3FF, #51B4E8);
-  --card-color: radial-gradient(#E5F2FF, #D5F3FF);
+  --card-color: radial-gradient(#e5f2ffa3, #d5f3ffb6);
   /* Colors Dark */
   --button-color-dark: #7D69F1;
 
@@ -60,11 +59,14 @@ textarea {
 }
 
 body {
-  background: var(--body-color);
+  /* background: var(--body-color); */
+  background: url('/img/ModoLight.jpg') no-repeat center center fixed;
+  background-size: cover;
   font-family: var(--font);
   font-size: var(--T3);
   font-weight: var(--font-normal);
   color: var(--primary-color);
+
 }
 
 h1,
@@ -121,6 +123,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  text-shadow: 2px 2px 3px #0055b5;
 }
 
 .main {
@@ -150,7 +153,7 @@ button {
   border-top-right-radius: 80% 45%;
   height: 200px;
   width: 300px;
-
+  box-shadow: 5px 5px 5px 4px rgba(0, 0, 0, 0.2);
 }
 
 .container__weather{
@@ -172,11 +175,14 @@ button {
 .info {
   font-size: var(--T6);
   margin: 5px 0;
+  color: #0055b5;
 }
 
 .button {
   display: flex;
   margin: 0 auto;
+  box-shadow: 5px 5px 5px 4px rgba(0, 0, 0, 0.2);
+  
 }
 
 .changeTemp {
@@ -185,6 +191,12 @@ button {
   background-color: var(--button-color);
   border-radius: 10px;
   font-size: var(--T5);
+  transition: filter .2s ease-in-out;
+}
+
+.changeTemp:hover {
+  filter: brightness(1.2);
+  box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 .footer {

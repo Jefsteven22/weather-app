@@ -1,5 +1,6 @@
 import axios from "axios"
 import { useState, useEffect } from "react"
+import Loading from './Loading'
 
 
 const Weather = () => {
@@ -7,6 +8,7 @@ const Weather = () => {
   const [data, setData] = useState({})
   const [metric, setMetric] = useState(true)
   const tempToCelcius = Math.round(data.main?.temp - 273.15)
+  const [isLoading, setIsLoading] = useState(true)
 
   const icons = {
 
@@ -34,10 +36,12 @@ const Weather = () => {
   useEffect( () => {
     
     navigator.geolocation.getCurrentPosition((position) => {
-      
+
+      setIsLoading(true)
       axios.get(`https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=f435644d8da0a624ff654c495d94ea50`)
-      .then( resp => setData(resp.data))
-      .catch( error => console.error(error))
+        .then( resp => setData(resp.data))
+        .catch( error => console.error(error))
+        .finally( () => setIsLoading(false))
     })
     
   }, [])
@@ -45,29 +49,33 @@ const Weather = () => {
   
   return(
     <>
-    <section className="weather__wrapper">
-      <h1 className="title">Weather app</h1>
-      <div className="container__weather">
-        <div className="header">
-          <p>{metric ? `${tempToCelcius} °C` : `${Math.round(tempToCelcius * 9/5 + 32)} °F`}</p>
-          <img className="icon" src={icons[data.weather?.[0].icon]} alt="Iconos del tiempo" />
-        </div>
-        <div className="main">
-          <div className="info">
-            <p>VIENTO: {data.wind?.speed} m/s</p>
-            <p>NUBES: {data.clouds?.all}%</p>
-            <p>PRESION: {data.main?.pressure} hPa</p>
+      {
+        isLoading 
+          ? (<Loading />)
+          : (<section className="weather__wrapper">
+          <h1 className="title">Weather app</h1>
+          <div className="container__weather">
+            <div className="header">
+              <p>{metric ? `${tempToCelcius} °C` : `${Math.round(tempToCelcius * 9/5 + 32)} °F`}</p>
+              <img className="icon" src={icons[data.weather?.[0].icon]} alt="Iconos del tiempo" />
+            </div>
+            <div className="main">
+              <div className="info">
+                <p>VIENTO: {data.wind?.speed} m/s</p>
+                <p>NUBES: {data.clouds?.all}%</p>
+                <p>PRESION: {data.main?.pressure} hPa</p>
+              </div>
+            </div>
+            <div className="footer">
+              <p>{data.name}, {data.sys?.country}</p>
+              <p className="description">{data.weather?.[0].description}</p>
+            </div>
           </div>
-        </div>
-        <div className="footer">
-          <p>{data.name}, {data.sys?.country}</p>
-          <p className="description">{data.weather?.[0].description}</p>
-        </div>
-      </div>
-      <div className="button">
-        <button className="changeTemp" onClick={() => setMetric(!metric)}>{metric ? 'Cambiar a °F' : 'Cambiar a °C'}</button>
-      </div>
-    </section>
+          <div className="button">
+            <button className="changeTemp" onClick={() => setMetric(!metric)}>{metric ? 'Cambiar a °F' : 'Cambiar a °C'}</button>
+          </div>
+        </section>)
+      }
     </>
   )
 }
